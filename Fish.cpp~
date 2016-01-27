@@ -1,10 +1,7 @@
 /*
  * Fish class. Draws a fish.
  *
- * Written by Igor Kromin,
- * Found at https://www.igorkromin.net/index.php/2013/03/02/opengl-aquarium-written-in-c/
- *
- * Adjusted to adhere to the Object class
+ * Igor Kromin 40125374
  */
 
 #include "Fish.h"

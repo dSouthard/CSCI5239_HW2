@@ -243,6 +243,7 @@ void Hw02opengl::paintGL()
       shader[mode].bind();
       //  Dimensions
       QVector3D loc(x0,y0,1/z0);
+      shader[mode].setUniformValue("loc",loc);
       shader[mode].setUniformValue("time",t);
    }
 

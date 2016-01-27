@@ -1,3 +1,6 @@
+// Vertex shader for Sine Waves shader
+// Derived from Ex 3
+
 //  Light intensity and model position required by fragment shader
 varying float LightIntensity;
 
@@ -31,22 +34,13 @@ float phong()
    return length(color);
 }
 
-
-//
-// texture.vert: Vertex shader for wobbling a texture
-//
-// author: Antonio Tejada
-//
-// Copyright (c) 2002: 3Dlabs, Inc.
-//
-
-void main(void) {
-
-//  Scalar light intensity (for fragment shader)
+void main()
+{
+   //  Scalar light intensity (for fragment shader)
    LightIntensity = phong();
-
-    gl_Position = gl_ModelViewProjectionMatrix * gl_Vertex;
-
-//  Texture coordinates
+   
+   //  Return fixed transform coordinates for this vertex
+   gl_Position = gl_ModelViewProjectionMatrix * gl_Vertex;
+   //  Texture coordinates
    gl_TexCoord[0] = gl_MultiTexCoord0;
 }

@@ -13,9 +13,7 @@ uniform float time;
 void main()
 {
 	// Create a simple sin function based off of texture coordinates
-	// Multiply by time to rotate the resulting patterns
-	// Multiply by 0.75 to adjust speed of rotation
-	float a = sin(gl_TexCoord[0].s*30.0*time*0.75)*0.5+0.5;	
+	float a = sin(gl_TexCoord[0].s*30.0*time*0.75)*0.5+0.5;
 	float b = sin(gl_TexCoord[0].t*30.0*time*0.75)*0.5+0.5;
 
 	// Create color for fragment
