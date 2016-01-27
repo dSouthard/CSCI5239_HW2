@@ -31,6 +31,6 @@ All positioning adjustments can be reset by clicking on the "Reset" button on th
 
 Use the Quit button or the window's exit button to end the program.
 
-**Time To Complete Assignment:** ~ 8 hours
+**Time To Complete Assignment:** ~ 4 hours
 
 Based on provided class Example 3.
